@@ -1,0 +1,27 @@
+{
+    "name": "pteal79/share-text",
+    "version": "1.0.0",
+    "description": "Open the native share sheet with plain text",
+    "namespace": "ShareText",
+    "keywords": ["share", "text", "share sheet"],
+    "category": "utilities",
+    "license": "MIT",
+    "platforms": ["android", "ios"],
+    "bridge_functions": [
+        {
+            "name": "ShareText.Text",
+            "android": "com.pteal79.plugins.sharetext.ShareTextFunctions.Text",
+            "ios": "ShareTextFunctions.Text",
+            "description": "Show the native share sheet for a block of plain text"
+        }
+    ],
+    "events": [],
+    "android": {
+        "min_version": 26,
+        "permissions": []
+    },
+    "ios": {
+        "min_version": "18.2",
+        "info_plist": {}
+    }
+}
